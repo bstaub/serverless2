@@ -1,18 +1,4 @@
 {
   "name": "mein Serverless 2 Deployment!",
-  "version": 2,
-  "builder": [
-    {
-      "src": "*.html",
-      "use": "@now/static"
-    },
-    {
-      "src": "*.js",
-      "use": "@now/node"
-    },
-    {
-      "src": "*.php",
-      "use": "@now/php"
-    }
-  ]
+  "version": 2
 }
