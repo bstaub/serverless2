@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bruno Staub">
+    <meta name="description" content="Example WebAPP">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Secrets with Serverless2 Deploy in Github and zeit.co</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .gradient1{
+            height: 200px;
+            width: 100%;
+            background: #655;
+            background-image: radial-gradient(tan 20%, transparent 0),
+            radial-gradient(tan 20%, transparent 0);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+        .gradient2conic{
+            height: 200px;
+            width: 100%;
+            background: red;
+            background: conic-gradient(limegreen, green, limegreen);
+            min-height: 100%;
+        }
+        .gradient3linear{
+            height: 200px;
+            width: 100%;
+            background: linear-gradient(0deg, yellow, red);
+        }
+        .gradient3linear90{
+            height: 200px;
+            width: 100%;
+            background: rgb(255, 128, 0);
+            background: linear-gradient(90deg, yellow, red);
+        }
+    </style>
+    <script>
+        function $$(selector, context){
+            context = context || document;
+            var elements = context.querySelectorAll(selector);
+            return Array.prototype.slice.call(elements);
+        }
+    </script>
+</head>
+<body>
+
+<h1>CSS Tricks Buch</h1>
+
+<h2>Selector Buch JS Formel</h2>
+<p>Hilfsfunktion: erleichtert es uns eine Schleife über eine Reihe von Elementen auszuführen.</p>
+<pre>
+    function $$(selector, context){
+        context = context || document;
+        var elements = context.querySelectorAll(selector);
+        return Array.prototype.slice.call(elements);
+    }
+</pre>
+<h2>Links Browserunterstützung</h2>
+
+<a href="http://caniuse.com">caniuse.com</a><br>
+<a href="http://Webplatform.org">WebPlatform.org</a><br>
+<a href="http://developer.mozilla.org">developer.mozilla.org</a><br>
+<a href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets">wikipedia css</a><br>
+
+</pre>
+
+<!-- Gradienten -->
+
+<h2>Gradient1 Polka</h2>
+<a href="http://play.csssecrets.io/polka">play.csssecrets.io/polka</a>
+<pre>
+            http://play.csssecrets.io/polka
+
+            height: 200px;
+            width: 100%;
+            background: #655;
+            background-image: radial-gradient(tan 20%, transparent 0),
+            radial-gradient(tan 20%, transparent 0);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+</pre>
+<div class="gradient1"></div>
+
+
+<h2>Gradient2 Conic</h2>
+<a href="http://play.csssecrets.io/test-conic-gradient">play.csssecrets.io/test-conic-gradient</a>
+<pre>
+            play.csssecrets.io/test-conic-gradient
+
+            height: 200px;
+            width: 100%;
+            background: red;
+            background: conic-gradient(limegreen, green, limegreen);
+            min-height: 100%;
+</pre>
+<div class="gradient2conic"></div>
+
+
+<h2>Gradient3 Linear Gradient 0</h2>
+<pre>
+            height: 200px;
+            width: 100%;
+            background: linear-gradient(0deg, yellow, red);
+
+</pre>
+<div class="gradient3linear"></div>
+
+<h2>Gradient Linear Gradient 90</h2>
+<pre>
+            height: 200px;
+            width: 100%;
+            background: rgb(255, 128, 0);
+            background: linear-gradient(90deg, yellow, red);
+
+</pre>
+<div class="gradient3linear90"></div>
+
+
+
+<!-- <script src="script.js"></script> -->
+</body>
+</html>
